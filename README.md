@@ -1,2 +1,2 @@
 # infarct_hardcore
-MinecraftForge horror mod
+Fabric horror mod
