@@ -19,6 +19,8 @@ repositories {
 }
 
 loom {
+	accessWidenerPath = file("src/client/resources/infarct_hardcore_at.accesswidener")
+
     splitEnvironmentSourceSets()
 
 	mods {
