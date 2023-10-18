@@ -3,6 +3,7 @@
   "package": "infarct.hardcore.mod.mixin.client",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "DeathScreenMixin",
     "HeartTypeMixin"
   ],
   "injectors": {
