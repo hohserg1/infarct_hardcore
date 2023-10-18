@@ -1,10 +1,11 @@
 package infarct.hardcore.mod;
 
-import java.util.*;
-import net.fabricmc.api.*;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.*;
-import net.minecraft.client.*;
-import net.minecraft.text.*;
+import java.util.Random;
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.TranslatableTextContent;
 
 public class Infarct_hardcoreClient implements ClientModInitializer {
 
@@ -21,10 +22,12 @@ public class Infarct_hardcoreClient implements ClientModInitializer {
                 if (client.player != null) {
                     float currentHP = client.player.getHealth();
                     if (prevHP > currentHP) {
-                        if (currentHP < 3) {
-                            if (rand.nextInt(100) < 50) {
-                                hardcoreDisguise = true;
-                                sendWarning(client);
+                        if (!client.world.getLevelProperties().isHardcore()) {
+                            if (currentHP < 3) {
+                                if (rand.nextInt(100) < 50) {
+                                    hardcoreDisguise = true;
+                                    sendWarning(client);
+                                }
                             }
                         }
                     }
