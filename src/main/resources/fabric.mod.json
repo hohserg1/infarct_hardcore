@@ -1,42 +1,42 @@
 {
-	"schemaVersion": 1,
-	"id": "infarct_hardcore",
-	"version": "${version}",
-	"name": "infarct_hardcore",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/infarct_hardcore/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"infarct.hardcore.mod.Infarct_hardcore"
-		],
-		"client": [
-			"infarct.hardcore.mod.Infarct_hardcoreClient"
-		]
-	},
-	"accessWidener" : "infarct_hardcore_at.accesswidener",
-	"mixins": [
-		"infarct_hardcore.mixins.json",
-		{
-			"config": "infarct_hardcore.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.14.23",
-		"minecraft": "~1.20.2",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "infarct_hardcore",
+  "version": "${version}",
+  "name": "infarct_hardcore",
+  "description": "Small joke spooky mod",
+  "authors": [
+    "hohserg",
+    "Potatoe[F[_]]"
+  ],
+  "contact": {
+    "homepage": "https://legacy.curseforge.com/minecraft/mc-mods/infarcthardcore",
+    "sources": "https://github.com/hohserg1/infarct_hardcore"
+  },
+  "license": "GNU GPLv3",
+  "icon": "assets/infarct_hardcore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "infarct.hardcore.mod.Infarct_hardcore"
+    ],
+    "client": [
+      "infarct.hardcore.mod.Infarct_hardcoreClient"
+    ]
+  },
+  "accessWidener": "infarct_hardcore_at.accesswidener",
+  "mixins": [
+    {
+      "config": "infarct_hardcore.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.23",
+    "minecraft": "~1.20.2",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
