@@ -19,7 +19,7 @@ public class Infarct_hardcoreClient implements ClientModInitializer {
     public void onInitializeClient() {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (!hardcoreDisguise) {
-                if (client.player != null) {
+                if (client.player != null && !(client.currentScreen instanceof DeathScreen)) {
                     float currentHP = client.player.getHealth();
                     if (prevHP > currentHP) {
                         if (!client.world.getLevelProperties().isHardcore()) {
