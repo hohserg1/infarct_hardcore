@@ -23,7 +23,7 @@ public class Infarct_hardcoreClient implements ClientModInitializer {
                     float currentHP = client.player.getHealth();
                     if (prevHP > currentHP) {
                         if (!client.world.getLevelProperties().isHardcore()) {
-                            if (currentHP <= 7) {
+                            if (currentHP <= 3.5) {
                                 if (rand.nextInt(100) < 50) {
                                     hardcoreDisguise = true;
                                     sendWarning(client);
