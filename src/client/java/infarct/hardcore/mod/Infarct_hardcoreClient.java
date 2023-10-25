@@ -4,6 +4,7 @@ import java.util.Random;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.DeathScreen;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.TranslatableTextContent;
 
