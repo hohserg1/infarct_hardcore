@@ -41,7 +41,6 @@ public abstract class DeathScreenMixin {
             if (this.ticksSinceDeath > 20 * 7) {
                 Text text = Text.translatable("deathScreen.respawn");
                 this.buttons.get(0).setMessage(text);
-                Infarct_hardcoreClient.hardcoreDisguise = false;
             }
         }
     }
